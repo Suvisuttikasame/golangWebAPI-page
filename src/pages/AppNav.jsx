@@ -1,9 +1,18 @@
+import { NavLink, Outlet } from "react-router-dom";
+import styles from "../components/AppNav.module.css";
 function AppNav() {
   return (
-    <>
-      <h1>App navigation</h1>
-      <h1>list of city</h1>
-    </>
+    <div className={styles.nav}>
+      <ul>
+        <li>
+          <NavLink to="countries">Countries</NavLink>
+        </li>
+        <li>
+          <NavLink to="cities">Cities</NavLink>
+        </li>
+      </ul>
+      <Outlet />
+    </div>
   );
 }
 
