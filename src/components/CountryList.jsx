@@ -1,5 +1,6 @@
 import CountryItem from "./CountryItem";
 import Spinner from "./Spinner";
+import Message from "./Message";
 import styles from "./CountryList.module.css";
 import PropTypes from "prop-types";
 
@@ -12,6 +13,8 @@ function CountryList({ cities, isLoading }) {
     }
   }, []);
   if (isLoading) return <Spinner />;
+  if (cities.length === 0)
+    return <Message message="Please choose your cities" />;
   return (
     <ul className={styles.countryList}>
       {countries.map((country) => {

@@ -2,9 +2,12 @@ import CityItem from "./CityItem";
 import Spinner from "./Spinner";
 import styles from "./CityList.module.css";
 import PropTypes from "prop-types";
+import Message from "./Message";
 
 function CityList({ cities, isLoading }) {
   if (isLoading) return <Spinner />;
+  if (cities.length === 0)
+    return <Message message="Please choose your cities" />;
   return (
     <ul className={styles.cityList}>
       {cities.map((city) => {
@@ -13,6 +16,9 @@ function CityList({ cities, isLoading }) {
             emoji={city.emoji}
             cityName={city.cityName}
             date={city.date}
+            id={city.id}
+            lat={city.position.lat}
+            lng={city.position.lng}
             key={city.cityName}
           />
         );
