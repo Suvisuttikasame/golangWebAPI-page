@@ -3,8 +3,10 @@ import Spinner from "./Spinner";
 import styles from "./CityList.module.css";
 import PropTypes from "prop-types";
 import Message from "./Message";
+import { useCity } from "../contexts/CityProvider";
 
-function CityList({ cities, isLoading }) {
+function CityList() {
+  const { cities, isLoading } = useCity();
   if (isLoading) return <Spinner />;
   if (cities.length === 0)
     return <Message message="Please choose your cities" />;
