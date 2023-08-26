@@ -1,6 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import styles from "./CityItem.module.css";
 import PropTypes from "prop-types";
+import { useCity } from "../contexts/CityProvider";
 
 const formatDate = (date) =>
   new Intl.DateTimeFormat("en", {
@@ -11,9 +12,12 @@ const formatDate = (date) =>
 
 function CityItem({ emoji, cityName, date, id, lat, lng }) {
   const navigate = useNavigate();
+  const { currentCity } = useCity();
   return (
     <li
-      className={styles.cityItem}
+      className={`${styles.cityItem} ${
+        currentCity.cityName === cityName ? styles["cityItem--active"] : ""
+      }`}
       onClick={() => {
         navigate(`${id}?lat=${lat}&lng=${lng}`);
       }}

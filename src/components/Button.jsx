@@ -3,7 +3,7 @@ import styles from "./Button.module.css";
 
 function Button({ children, clickEvent, type }) {
   return (
-    <button onClick={clickEvent} className={`${styles.btn} ${type}`}>
+    <button onClick={clickEvent} className={`${styles.btn} ${styles[type]}`}>
       {children}
     </button>
   );
