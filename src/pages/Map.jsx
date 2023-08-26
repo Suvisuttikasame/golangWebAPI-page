@@ -1,4 +1,3 @@
-import { useSearchParams } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import styles from "../components/Map.module.css";
 import {
@@ -15,11 +14,10 @@ import { useEffect } from "react";
 import Button from "../components/Button";
 import { useGeolocation } from "../hooks/useGeolocation";
 import PropTypes from "prop-types";
+import { useLocationParam } from "../hooks/useLocationParam";
 
 function Map() {
-  const [searchParam] = useSearchParams();
-  const lat = searchParam.get("lat");
-  const lng = searchParam.get("lng");
+  const [lat, lng] = useLocationParam();
   const { cities } = useCity();
   const {
     isLoading: isLoadingGeolocation,
@@ -83,7 +81,6 @@ function DetectClick() {
   const navigate = useNavigate();
   useMapEvent({
     click: (e) => {
-      console.log(e);
       navigate(`form?lat=${e.latlng.lat}&lng=${e.latlng.lng}`);
     },
   });

@@ -35,6 +35,126 @@
         "lng": 13.376933665713324
       },
       "id": 98443197
+    },
+    {
+      "cityName": "Greater London",
+      "country": "United Kingdom of Great Britain and Northern Ireland (the)",
+      "emoji": "🇬🇧",
+      "date": "2023-08-26T12:02:21.013Z",
+      "notes": "",
+      "position": {
+        "lat": 51.51119974058721,
+        "lng": -0.12720108032226565
+      },
+      "id": 98443198
+    },
+    {
+      "cityName": "Cavan",
+      "country": "Ireland",
+      "emoji": "🇮🇪",
+      "date": "2023-08-26T12:07:00.786Z",
+      "notes": "",
+      "position": {
+        "lat": 53.98193516209167,
+        "lng": -7.404785156250001
+      },
+      "id": 98443199
+    },
+    {
+      "cityName": "Breteuil",
+      "country": "France",
+      "emoji": "🇫🇷",
+      "date": "2023-08-26T12:08:11.775Z",
+      "notes": "",
+      "position": {
+        "lat": 49.644767831298076,
+        "lng": 2.2860185801982884
+      },
+      "id": 98443200
+    },
+    {
+      "cityName": "Guines",
+      "country": "France",
+      "emoji": "🇫🇷",
+      "date": "2023-08-26T12:10:45.632Z",
+      "notes": "",
+      "position": {
+        "lat": 50.84757295365389,
+        "lng": 1.8237304687500002
+      },
+      "id": 98443201
+    },
+    {
+      "cityName": "Bordj Omar Driss",
+      "country": "Algeria",
+      "emoji": "🇩🇿",
+      "date": "2023-08-26T12:11:31.895Z",
+      "notes": "",
+      "position": {
+        "lat": 28.465528167151238,
+        "lng": 6.185098886489868
+      },
+      "id": 98443202
+    },
+    {
+      "cityName": "Ilulissat",
+      "country": "Greenland",
+      "emoji": "🇬🇱",
+      "date": "2023-08-26T12:12:59.201Z",
+      "notes": "",
+      "position": {
+        "lat": 74.59010800882325,
+        "lng": -45.3515625
+      },
+      "id": 98443203
+    },
+    {
+      "cityName": "Region 5, Unorganized",
+      "country": "Canada",
+      "emoji": "🇨🇦",
+      "date": "2023-08-26T12:17:35.938Z",
+      "notes": "",
+      "position": {
+        "lat": 60.413852350464936,
+        "lng": -110.03906250000001
+      },
+      "id": 98443204
+    },
+    {
+      "cityName": "Bayasgalant",
+      "country": "Mongolia",
+      "emoji": "🇲🇳",
+      "date": "2023-08-26T12:17:47.074Z",
+      "notes": "",
+      "position": {
+        "lat": 47.040182144806664,
+        "lng": 108.28125000000001
+      },
+      "id": 98443205
+    },
+    {
+      "cityName": "Verkhneketsky District",
+      "country": "Russian Federation (the)",
+      "emoji": "🇷🇺",
+      "date": "2023-08-26T12:18:13.024Z",
+      "notes": "",
+      "position": {
+        "lat": 59.445075099047166,
+        "lng": 85.95703125000001
+      },
+      "id": 98443206
+    },
+    {
+      "cityName": "Ruoqiang",
+      "country": "China",
+      "emoji": "🇨🇳",
+      "date": "2023-08-26T12:22:58.889Z",
+      "notes": "",
+      "position": {
+        "lat": 36.31512514748051,
+        "lng": 90
+      },
+      "id": 98443207
     }
   ]
 }
