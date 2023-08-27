@@ -1,18 +1,6 @@
 {
   "cities": [
     {
-      "cityName": "Lisbon",
-      "country": "Portugal",
-      "emoji": "🇵🇹",
-      "date": "2027-10-31T15:59:59.138Z",
-      "notes": "My favorite city so far!",
-      "position": {
-        "lat": 38.727881642324164,
-        "lng": -9.140900099907554
-      },
-      "id": 73930385
-    },
-    {
       "cityName": "Madrid",
       "country": "Spain",
       "emoji": "🇪🇸",
@@ -35,6 +23,54 @@
         "lng": 13.376933665713324
       },
       "id": 98443197
+    },
+    {
+      "cityName": "Greater London",
+      "country": "United Kingdom of Great Britain and Northern Ireland (the)",
+      "emoji": "🇬🇧",
+      "date": "2023-08-26T12:02:21.013Z",
+      "notes": "",
+      "position": {
+        "lat": 51.51119974058721,
+        "lng": -0.12720108032226565
+      },
+      "id": 98443198
+    },
+    {
+      "cityName": "Cavan",
+      "country": "Ireland",
+      "emoji": "🇮🇪",
+      "date": "2023-08-26T12:07:00.786Z",
+      "notes": "",
+      "position": {
+        "lat": 53.98193516209167,
+        "lng": -7.404785156250001
+      },
+      "id": 98443199
+    },
+    {
+      "cityName": "Breteuil",
+      "country": "France",
+      "emoji": "🇫🇷",
+      "date": "2023-08-26T12:08:11.775Z",
+      "notes": "",
+      "position": {
+        "lat": 49.644767831298076,
+        "lng": 2.2860185801982884
+      },
+      "id": 98443200
+    },
+    {
+      "cityName": "Guines",
+      "country": "France",
+      "emoji": "🇫🇷",
+      "date": "2023-08-26T12:10:45.632Z",
+      "notes": "",
+      "position": {
+        "lat": 50.84757295365389,
+        "lng": 1.8237304687500002
+      },
+      "id": 98443201
     }
   ]
 }
