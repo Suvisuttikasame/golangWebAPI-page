@@ -93,6 +93,6 @@ function useCity() {
 }
 
 CityProvider.propTypes = {
-  children: PropTypes.object,
+  children: PropTypes.node,
 };
 export { CityProvider, useCity };
