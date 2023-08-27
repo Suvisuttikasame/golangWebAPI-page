@@ -12,7 +12,7 @@ const formatDate = (date) =>
 
 function CityItem({ emoji, cityName, date, id, lat, lng }) {
   const navigate = useNavigate();
-  const { currentCity } = useCity();
+  const { currentCity, deleteCity } = useCity();
   return (
     <li
       className={`${styles.cityItem} ${
@@ -25,7 +25,15 @@ function CityItem({ emoji, cityName, date, id, lat, lng }) {
       <span className={styles.emoji}>{emoji}</span>
       <h3 className={styles.name}>{cityName}</h3>
       <time className={styles.date}>{formatDate(date)}</time>
-      <button className={styles.deleteBtn}>&times;</button>
+      <button
+        className={styles.deleteBtn}
+        onClick={(e) => {
+          e.stopPropagation();
+          deleteCity(id);
+        }}
+      >
+        &times;
+      </button>
     </li>
   );
 }

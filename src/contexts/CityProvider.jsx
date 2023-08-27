@@ -57,9 +57,30 @@ function CityProvider({ children }) {
     }
   }
 
+  async function deleteCity(id) {
+    try {
+      setIsLoading(true);
+      await fetch(`${BASE_URL}/cities/${id}`, {
+        method: "DELETE",
+      });
+      setCities((cities) => cities.filter((city) => city.id !== id));
+    } catch (error) {
+      throw new Error(error);
+    } finally {
+      setIsLoading(false);
+    }
+  }
+
   return (
     <CityContext.Provider
-      value={{ cities, isLoading, getCityById, currentCity, createNewCity }}
+      value={{
+        cities,
+        isLoading,
+        getCityById,
+        currentCity,
+        createNewCity,
+        deleteCity,
+      }}
     >
       {children}
     </CityContext.Provider>
