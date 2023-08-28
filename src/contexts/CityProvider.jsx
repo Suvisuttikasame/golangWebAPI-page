@@ -1,6 +1,7 @@
 import { createContext, useContext } from "react";
 import { useEffect, useState } from "react";
 import PropTypes from "prop-types";
+import { useCallback } from "react";
 
 const CityContext = createContext();
 function CityProvider({ children }) {
@@ -25,7 +26,7 @@ function CityProvider({ children }) {
     getCities();
   }, []);
 
-  async function getCityById(id) {
+  const getCityById = useCallback(async function getCityById(id) {
     try {
       setIsLoading(true);
       const fData = await fetch(`${BASE_URL}/cities/${id}`);
@@ -36,7 +37,7 @@ function CityProvider({ children }) {
     } finally {
       setIsLoading(false);
     }
-  }
+  }, []);
 
   async function createNewCity(newCity) {
     try {
